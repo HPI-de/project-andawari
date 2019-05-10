@@ -1,19 +1,25 @@
 package de.hpi.mobiledev.games.andawari
 
-import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.graphics.GL20
-import com.badlogic.gdx.graphics.Texture
+import com.badlogic.gdx.Screen
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
+import de.hpi.mobiledev.games.andawari.screens.game.GameScreen
+import ktx.app.KtxGame
 
-class AndawariGame : BaseGame() {
-    private val batch by disposable { SpriteBatch() }
-    private val img by disposable { Texture("badlogic.jpg") }
+class AndawariGame : KtxGame<Screen>() {
+    lateinit var batch: SpriteBatch
 
-    override fun render() {
-        Gdx.gl.glClearColor(1f, 0f, 0f, 1f)
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
-        batch.begin()
-        batch.draw(img, 0f, 0f)
-        batch.end()
+    override fun create() {
+        super.create()
+
+        batch = SpriteBatch()
+
+        addScreen(GameScreen(this))
+        setScreen<GameScreen>()
+    }
+
+    override fun dispose() {
+        super.dispose()
+
+        batch.dispose()
     }
 }
