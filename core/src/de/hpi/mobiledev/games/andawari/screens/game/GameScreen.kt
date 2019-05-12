@@ -4,7 +4,6 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.assets.AssetManager
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.OrthographicCamera
-import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer
 import com.badlogic.gdx.utils.viewport.ExtendViewport
 import de.hpi.mobiledev.games.andawari.AndawariGame
@@ -55,7 +54,6 @@ class GameScreen(assets: AssetManager, val game: AndawariGame) : KtxScreen {
         debugRenderer.render(world, camera.combined)
 
         game.batch.begin()
-        game.batch.draw(img, 0f, 0f, 1f, 1f)
         game.batch.end()
 
 
