@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer
 import com.badlogic.gdx.utils.viewport.ExtendViewport
 import de.hpi.mobiledev.games.andawari.AndawariGame
-import de.hpi.mobiledev.games.andawari.entities.Car
+import de.hpi.mobiledev.games.andawari.entities.car.Car
 import de.hpi.mobiledev.games.andawari.entities.Ground
 import ktx.app.KtxScreen
 import ktx.box2d.createWorld

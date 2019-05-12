@@ -1,4 +1,4 @@
-package de.hpi.mobiledev.games.andawari.entities
+package de.hpi.mobiledev.games.andawari.entities.car
 
 import com.badlogic.gdx.physics.box2d.Body
 import com.badlogic.gdx.physics.box2d.BodyDef
