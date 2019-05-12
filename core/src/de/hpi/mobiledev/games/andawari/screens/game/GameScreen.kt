@@ -43,6 +43,7 @@ class GameScreen(val game: AndawariGame) : KtxScreen {
     override fun render(delta: Float) {
         super.render(delta)
 
+        // Draw
         Gdx.gl.glClearColor(1f, 1f, 1f, 1f)
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
 
@@ -55,6 +56,10 @@ class GameScreen(val game: AndawariGame) : KtxScreen {
         game.batch.draw(img, 0f, 0f, 1f, 1f)
         game.batch.end()
 
+
+        // Update
+        if (Gdx.input.isTouched)
+            car.accelerate(true)
         step(delta)
     }
 

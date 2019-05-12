@@ -7,6 +7,8 @@ import ktx.box2d.body
 
 class Car private constructor(val body: Body) {
     companion object {
+        const val ACCELERATION = 1f
+
         fun forParameters(world: World): Car {
             val body = world.body {
                 type = BodyDef.BodyType.DynamicBody
@@ -19,5 +21,10 @@ class Car private constructor(val body: Body) {
             }
             return Car(body)
         }
+    }
+
+    fun accelerate(forwards: Boolean) {
+        val torque = if (forwards) ACCELERATION else -ACCELERATION
+        body.applyTorque(-torque, true)
     }
 }
