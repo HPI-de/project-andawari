@@ -17,8 +17,8 @@ class AndawariGame : KtxGame<Screen>() {
         batch = SpriteBatch()
         assets = AssetManager()
 
-        addScreen(LoadingScreen(assets, this) {
-            addScreen(GameScreen(assets, this))
+        addScreen(LoadingScreen(this) {
+            addScreen(GameScreen(this))
             setScreen<GameScreen>()
         })
         setScreen<LoadingScreen>()

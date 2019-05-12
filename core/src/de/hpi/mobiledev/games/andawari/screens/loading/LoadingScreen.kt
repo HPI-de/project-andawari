@@ -1,9 +1,6 @@
 package de.hpi.mobiledev.games.andawari.screens.loading
 
-import de.hpi.mobiledev.games.andawari.Assets
-
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.assets.AssetManager
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.OrthographicCamera
@@ -15,7 +12,7 @@ import ktx.app.KtxScreen
 import ktx.box2d.createWorld
 import ktx.box2d.earthGravity
 
-class LoadingScreen(val assets: AssetManager, val game: AndawariGame, val onComplete: () -> Unit) : KtxScreen {
+class LoadingScreen(val game: AndawariGame, val onComplete: () -> Unit) : KtxScreen {
     companion object {
         const val WIDTH_MIN = 20f
         const val HEIGHT_MIN = 10f
@@ -30,13 +27,13 @@ class LoadingScreen(val assets: AssetManager, val game: AndawariGame, val onComp
     }
 
     init {
-        assets.loadAll()
+        game.assets.loadAll()
     }
 
     override fun render(delta: Float) {
         super.render(delta)
 
-        if (assets.update()) {
+        if (game.assets.update()) {
             onComplete() // We are done loading.
         }
 
@@ -52,7 +49,7 @@ class LoadingScreen(val assets: AssetManager, val game: AndawariGame, val onComp
 
             begin(ShapeRenderer.ShapeType.Filled)
             color = Color.GREEN
-            rect(1f, 4.5f, 18f * assets.progress, 1f)
+            rect(1f, 4.5f, 18f * game.assets.progress, 1f)
             end()
         }
         game.batch.end();

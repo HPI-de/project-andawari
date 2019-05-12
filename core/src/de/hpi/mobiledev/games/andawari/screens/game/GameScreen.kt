@@ -16,7 +16,7 @@ import ktx.box2d.createWorld
 import ktx.box2d.earthGravity
 import kotlin.math.min
 
-class GameScreen(assets: AssetManager, val game: AndawariGame) : KtxScreen {
+class GameScreen(val game: AndawariGame) : KtxScreen {
     companion object {
         const val WIDTH_MIN = 20f
         const val HEIGHT_MIN = 10f
@@ -39,7 +39,7 @@ class GameScreen(assets: AssetManager, val game: AndawariGame) : KtxScreen {
     private val ground = Ground.forParameters(world)
     private val car = Car.forParameters(world)
 
-    private val img = assets.get(Assets.Textures.BadLogic)
+    private val img = game.assets[Assets.Textures.BadLogic]
 
     override fun render(delta: Float) {
         super.render(delta)
