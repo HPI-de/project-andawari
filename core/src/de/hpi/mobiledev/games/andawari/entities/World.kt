@@ -14,12 +14,12 @@ class GameWorld(
 ) {
 
     val physicsWorld: World
-    val cars: List<Car>
+    //val cars: List<Car>
     val landscape: Landscape
 
     init {
         physicsWorld = World(Vector2(0f, props.gravity), true)
-        cars = listOf(Car.forPlayer(player))
+        //cars = listOf(Car.forPlayer(player))
         landscape = props.generator.createLandscape()
     }
 

@@ -1,6 +1,7 @@
 package de.hpi.mobiledev.games.andawari.screens.game
 
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.assets.AssetManager
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.OrthographicCamera
 import com.badlogic.gdx.graphics.Texture
@@ -8,13 +9,15 @@ import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer
 import com.badlogic.gdx.utils.viewport.ExtendViewport
 import de.hpi.mobiledev.games.andawari.AndawariGame
 import de.hpi.mobiledev.games.andawari.entities.car.Car
+import de.hpi.mobiledev.games.andawari.Assets
 import de.hpi.mobiledev.games.andawari.entities.Ground
+import de.hpi.mobiledev.games.andawari.get
 import ktx.app.KtxScreen
 import ktx.box2d.createWorld
 import ktx.box2d.earthGravity
 import kotlin.math.min
 
-class GameScreen(val game: AndawariGame) : KtxScreen {
+class GameScreen(assets: AssetManager, val game: AndawariGame) : KtxScreen {
     companion object {
         const val WIDTH_MIN = 20f
         const val HEIGHT_MIN = 10f
@@ -37,8 +40,7 @@ class GameScreen(val game: AndawariGame) : KtxScreen {
     private val ground = Ground.forParameters(world)
     private val car = Car.forParameters(world)
 
-
-    private val img = Texture("badlogic.jpg")
+    private val img = assets.get(Assets.Textures.BadLogic)
 
     override fun render(delta: Float) {
         super.render(delta)
