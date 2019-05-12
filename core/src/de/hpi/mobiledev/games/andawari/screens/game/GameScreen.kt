@@ -3,12 +3,11 @@ package de.hpi.mobiledev.games.andawari.screens.game
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.OrthographicCamera
-import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer
 import com.badlogic.gdx.utils.viewport.ExtendViewport
 import de.hpi.mobiledev.games.andawari.AndawariGame
-import de.hpi.mobiledev.games.andawari.entities.car.Car
 import de.hpi.mobiledev.games.andawari.entities.Ground
+import de.hpi.mobiledev.games.andawari.entities.car.Car
 import ktx.app.KtxScreen
 import ktx.box2d.createWorld
 import ktx.box2d.earthGravity
@@ -38,8 +37,6 @@ class GameScreen(val game: AndawariGame) : KtxScreen {
     private val car = Car.forParameters(world)
 
 
-    private val img = Texture("badlogic.jpg")
-
     override fun render(delta: Float) {
         super.render(delta)
 
@@ -53,7 +50,6 @@ class GameScreen(val game: AndawariGame) : KtxScreen {
         debugRenderer.render(world, camera.combined)
 
         game.batch.begin()
-        game.batch.draw(img, 0f, 0f, 1f, 1f)
         game.batch.end()
 
 
