@@ -54,6 +54,7 @@ class GameScreen(assets: AssetManager, val game: AndawariGame) : KtxScreen {
         debugRenderer.render(world, camera.combined)
 
         game.batch.begin()
+        game.batch.draw(img, 0f, 0f, 1f, 1f)
         game.batch.end()
 
 
