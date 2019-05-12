@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 40.122845 49.590786"
+   height="49.590786mm"
+   width="40.122845mm">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-38.14691,-144.9068)"
+     id="layer1">
+    <g
+       id="g4848">
+      <rect
+         style="opacity:1;vector-effect:none;fill:#e4e3e1;fill-opacity:1;stroke:none;stroke-width:0.52191436;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.99146758"
+         id="rect4811"
+         width="10.417969"
+         height="10.748698"
+         x="53.12928"
+         y="183.74889" />
+      <rect
+         style="opacity:1;vector-effect:none;fill:#504f4e;fill-opacity:1;stroke:none;stroke-width:0.19542855;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect833"
+         width="39.889187"
+         height="5.3454733"
+         x="38.263733"
+         y="-186.31998"
+         transform="scale(1,-1)"
+         rx="2.1047475"
+         ry="2.1047475" />
+      <path
+         style="opacity:1;vector-effect:none;fill:#e4e3e1;fill-opacity:1;stroke:#e4e3e1;stroke-width:0.54799998;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.99146758"
+         d="m 40.625945,145.1808 c -1.221558,0 -2.205035,0.98348 -2.205035,2.20503 v 35.09399 c 0,1.22155 0.983477,2.20451 2.205035,2.20451 H 75.79072 c 1.221558,0 2.205035,-0.98296 2.205035,-2.20451 v -35.09399 c 0,-1.22155 -0.983477,-2.20503 -2.205035,-2.20503 z m 5.014679,3.10937 a 4.4175968,4.4175968 0 0 1 4.41782,4.4173 4.4175968,4.4175968 0 0 1 -4.41782,4.41782 4.4175968,4.4175968 0 0 1 -4.417819,-4.41782 4.4175968,4.4175968 0 0 1 4.417819,-4.4173 z m 12.213209,0 a 4.4175968,4.4175968 0 0 1 4.417817,4.4173 4.4175968,4.4175968 0 0 1 -4.417817,4.41782 4.4175968,4.4175968 0 0 1 -4.417303,-4.41782 4.4175968,4.4175968 0 0 1 4.417303,-4.4173 z m 12.213725,0 a 4.4175968,4.4175968 0 0 1 4.417301,4.4173 4.4175968,4.4175968 0 0 1 -4.417301,4.41782 4.4175968,4.4175968 0 0 1 -4.417819,-4.41782 4.4175968,4.4175968 0 0 1 4.417819,-4.4173 z m -24.426934,12.00547 a 4.4175968,4.4175968 0 0 1 4.41782,4.4173 4.4175968,4.4175968 0 0 1 -4.41782,4.41782 4.4175968,4.4175968 0 0 1 -4.417819,-4.41782 4.4175968,4.4175968 0 0 1 4.417819,-4.4173 z m 24.923028,0 a 4.4175968,4.4175968 0 0 1 4.417301,4.4173 4.4175968,4.4175968 0 0 1 -4.417301,4.41782 4.4175968,4.4175968 0 0 1 -4.41782,-4.41782 4.4175968,4.4175968 0 0 1 4.41782,-4.4173 z m -12.461772,0.16071 a 4.4175968,4.4175968 0 0 1 4.417817,4.4173 4.4175968,4.4175968 0 0 1 -4.417817,4.41782 4.4175968,4.4175968 0 0 1 -4.417303,-4.41782 4.4175968,4.4175968 0 0 1 4.417303,-4.4173 z"
+         id="rect826" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:9.11066151px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75922173"
+         x="-6.6637607"
+         y="189.06654"
+         id="text4820"
+         transform="rotate(-15.780473)"><tspan
+           id="tspan4818"
+           x="-6.6637607"
+           y="189.06654"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';fill:#bd00de;fill-opacity:1;stroke-width:0.75922173">GAS!!1</tspan></text>
+    </g>
+  </g>
+</svg>
